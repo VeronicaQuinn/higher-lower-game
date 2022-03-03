@@ -41,7 +41,7 @@ h2 {
     width: 3.5rem;
     border-color: purple;
     border-radius: 50%;
-    
+
 }
 
 #plus-minus-buttons {
@@ -58,6 +58,18 @@ h2 {
     justify-content: center;
     display: flex;
     align-items: center;
+}
+
+.guess-button i {
+    font-size: 3.3rem;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
 }
 
 #score-area {
