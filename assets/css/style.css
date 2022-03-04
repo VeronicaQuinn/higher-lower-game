@@ -16,12 +16,15 @@ h2 {
 }
 
 #card-container {
+    display: grid;
+    grid-template-columns: 33% 20% 33%;
     width: 85%;
     height: 32vh;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: auto;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .pile {
