@@ -2,10 +2,17 @@
     box-sizing: border-box;
 }
 
-h1,
+h1 {
+    text-align: center;
+    /* padding: 2rem 0.5rem 1.2rem; */
+    margin: 0;
+    background-color: #FBE700;
+    padding: 1rem 0;
+}
+
 h2 {
     text-align: center;
-    padding: 1.5rem 0.5rem;
+    padding: 1rem 0.5rem;
 }
 
 #game-area {
@@ -18,7 +25,7 @@ h2 {
 #card-container {
     display: grid;
     grid-template-columns: 33% 20% 33%;
-    width: 85%;
+    width: 91%;
     height: 32vh;
     justify-content: space-between;
     margin: auto;
@@ -29,8 +36,8 @@ h2 {
 
 .pile {
     border: 1px solid darkorchid;
-    width: 5.35rem;
-    height: 20vh;
+    width: 90px;
+    height: 140px;
     border-radius: 6px;
     display: flex;
     justify-content: center;
@@ -78,4 +85,14 @@ h2 {
 #score-area {
     text-align: center;
     font-size: 18px;
+}
+
+footer {
+
+        height: 49px;
+        background-color: #23297A;
+        
+        display: block;
+        clear: both;
+    
 }
