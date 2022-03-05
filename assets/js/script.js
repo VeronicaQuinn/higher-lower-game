@@ -12,5 +12,16 @@ for (let suit in suits) {
         deck.push(faces[face] + suits[suit]);
     }
 }
-console.log(deck);
+
+// function startGame() {
+    // Shuffle deck
+    for (let i = 0; i < 1000; i++) {
+        let shuffle1 = Math.floor((Math.random() * deck.length));
+        let shuffle2 = Math.floor((Math.random() * deck.length));
+        let shuffled = deck[shuffle1];
+        deck[shuffle1] = deck[shuffle2];
+        deck[shuffle2] = shuffled;
+    }
+    console.log(deck);
+// }})
 })
