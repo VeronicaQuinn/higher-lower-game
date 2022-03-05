@@ -23,15 +23,14 @@ h2 {
 }
 
 #card-container {
-    display: grid;
-    grid-template-columns: 33% 20% 33%;
+    display: flex;
     width: 91%;
     height: 32vh;
     justify-content: space-between;
-    margin: auto;
-    align-content: center;
+    /* align-content: center; */
     align-items: center;
-    justify-items: center;
+    /* justify-items: center; */
+    margin: auto;
 }
 
 .pile {
