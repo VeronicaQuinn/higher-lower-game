@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const startButton = document.getElementById('start-game');
     const pileTwo = document.getElementById('right-card');
     const pileOne = document.getElementById('left-card');
-    const buttons = document.getElementsByClassName('button');
+    const buttons = document.getElementsByClassName('guess-button');
 
     // Game play variables
 
@@ -19,28 +19,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
     startButton.addEventListener('click', startGame);
 
-    // Create deck
+    // Create deck and convert strings into number values
 
     for (let suit of suits) {
-    for (let face of faces) {
-        switch (face) {
-            case "A":
-                deck.push({value: 14, card: `${face}${suit}`});
-                break;
-            case "K":
-                deck.push({value: 13, card: `${face}${suit}`});
-                break;
-            case "Q":
-                deck.push({value: 12, card: `${face}${suit}`});
-                break;
-            case "J":
-                deck.push({value: 11, card: `${face}${suit}`});
-                break;
-            default:
-                deck.push({value: face, card: `${face}${suit}`});
+        for (let face of faces) {
+            switch (face) {
+                case "A":
+                    deck.push({
+                        value: 14,
+                        card: `${face}${suit}`
+                    });
+                    break;
+                case "K":
+                    deck.push({
+                        value: 13,
+                        card: `${face}${suit}`
+                    });
+                    break;
+                case "Q":
+                    deck.push({
+                        value: 12,
+                        card: `${face}${suit}`
+                    });
+                    break;
+                case "J":
+                    deck.push({
+                        value: 11,
+                        card: `${face}${suit}`
+                    });
+                    break;
+                default:
+                    deck.push({
+                        value: face,
+                        card: `${face}${suit}`
+                    });
+            }
         }
     }
-}
 
     function startGame() {
         // Shuffle deck
@@ -51,14 +66,21 @@ document.addEventListener("DOMContentLoaded", function () {
             deck[shuffle1] = deck[shuffle2];
             deck[shuffle2] = shuffled;
         }
+        // Start button
         currentCard = deck.pop();
-    pileOne.innerHTML = currentCard.card;
+        pileOne.innerHTML = currentCard.card;
         startButton.remove();
 
         for (let button of buttons) {
             button.addEventListener('click', guess);
         }
-    };
+    }
 
-    
+    function guess() {
+        // Player chooses 'Higher' or 'Lower'
+        newCard = deck.pop();
+        pileTwo.innerHTML = newCard.card;
+
+
+    }
 })
