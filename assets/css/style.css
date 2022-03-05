@@ -4,7 +4,6 @@
 
 h1 {
     text-align: center;
-    /* padding: 2rem 0.5rem 1.2rem; */
     margin: 0;
     background-color: #FBE700;
     padding: 1rem 0;
@@ -12,12 +11,13 @@ h1 {
 
 h2 {
     text-align: center;
-    padding: 1rem 0.5rem;
+    padding: 1.2rem 0.5rem;
+    margin: 0;
 }
 
 #game-area {
     height: 59vh;
-    background-color: lightcyan;
+    background-color: #d0eeff;
     padding: 1rem 0;
     border-radius: 8px;
 }
@@ -47,12 +47,18 @@ h2 {
 }
 
 #start-game {
-    height: 3.5rem;
-    width: 3.5rem;
-    border-color: purple;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
-
+    border-color: #D23A06;
+    border-radius: 50%;
+    border-width: medium;
+    font-size: 15px;
+    font-weight: bold;
+    background: #FBE700;
+    color: #0B28E8;
 }
+
 
 #plus-minus-buttons {
     display: flex;
@@ -68,18 +74,24 @@ h2 {
     justify-content: center;
     display: flex;
     align-items: center;
+    background-color: white;
 }
 
 .guess-button i {
-    font-size: 3.3rem;
+    font-size: 3.8rem;
 }
 
 .green {
-    color: green;
+    color: #34C972;
+}
+.scores {
+    font-size: 40px;
+    margin: 0;
+    color: #0B28e8;
 }
 
 .red {
-    color: red;
+    color: #D23A06;
 }
 
 #score-area {
@@ -89,10 +101,9 @@ h2 {
 
 footer {
 
-        height: 49px;
-        background-color: #23297A;
-        
-        display: block;
-        clear: both;
-    
+    height: 49px;
+    background-color: #0B28E8;
+    display: block;
+    clear: both;
+
 }

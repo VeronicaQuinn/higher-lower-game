@@ -1,5 +1,89 @@
 @media screen and (min-width: 444px) {
+
     #card-container {
         width: 78%;
     }
+}
+
+@media screen and (min-width: 604px) {
+
+    h1 {
+        text-align: center;
+        margin: 0;
+        background-color: #FBE700;
+        padding-bottom: 1.2rem;
+    }
+
+.pile {
+    width: 135px;
+    height: 201px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: ivory;
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: 40% 15% 40%;
+    width: 83%;
+    height: 32vh;
+    justify-content: space-between;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 3.5rem 0;
+}
+
+#start-game {
+    height: 5.8rem;
+    width: 5.8rem;
+}
+
+.guess-button i {
+    font-size: 4.6rem;
+}
+
+#plus-minus-buttons {
+    padding: 2.35rem 0;
+}
+}
+
+@media screen and (min-height: 599px) {
+
+h1 {
+    height: 198px;
+    padding-bottom: 1px;
+}
+
+h2 {
+    display: none;
+}
+
+#plus-minus-buttons {
+    padding: 3.35rem 0 1rem;
+}
+
+#game-area {
+    height: 68vh;
+}
+
+footer {
+    display: none;
+}
+}
+
+@media screen and (min-height: 728px) {
+
+#score-area {
+    padding-top: 39px;
+}
+
+footer {
+    display: block;
+}
+
 }
