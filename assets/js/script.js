@@ -1,3 +1,4 @@
+/* jshint esversion: 8 */
 // Waits for DOM to load before running any other functions
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -5,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // HTML elements
 
     const startButton = document.getElementById('start-game');
-    const pileTwo = document.getElementById('right-card');
     const pileOne = document.getElementById('left-card');
+    const pileTwo = document.getElementById('right-card');
     const buttons = document.getElementsByClassName('guess-button');
 
     // Game play variables
@@ -76,11 +77,42 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    function guess() {
-        // Player chooses 'Higher' or 'Lower'
+    function guess(e) {
+
         newCard = deck.pop();
         pileTwo.innerHTML = newCard.card;
+        if (e.currentTarget.dataset.type === "higher") {
+            if (newCard.value > currentCard.value) {
+                let oldScore = parseInt(document.getElementById('score').innerText);
+                document.getElementById('score').innerText = ++oldScore;
+                console.log("Yay! You got it!");
+            } else if (newCard.value === currentCard.value) {
+                console.log("That's ok, carry on");
+            } else {
+                alert("GAME OVER");
+                document.location.reload();
+                clearInterval();
+                console.log("game over, you loser");
+            }
+        } else {
+            if (newCard.value < currentCard.value) {
+                let oldScore = parseInt(document.getElementById('score').innerText);
+                document.getElementById('score').innerText = ++oldScore;
+                console.log("Yay! You got it!");
+            } else if (newCard.value === currentCard.value) {
+                console.log("That's ok, carry on");
+            } else {
+                alert("GAME OVER");
+                document.location.reload();
+                clearInterval();
+                console.log("game over, you loser")
+            }
+        }
 
-
+        setTimeout(function () {
+            pileOne.innerHTML = newCard.card;
+            pileTwo.innerHTML = "";
+            currentCard = newCard;
+        }, 1500);
     }
 })

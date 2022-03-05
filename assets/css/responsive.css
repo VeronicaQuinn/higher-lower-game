@@ -1,13 +1,13 @@
 @media screen and (min-width: 444px) {
 
     #card-container {
-        width: 78%;
+        width: 70%;
     }
 }
 
 @media screen and (min-width: 604px) {
 
-    h1 {
+h1 {
         text-align: center;
         margin: 0;
         background-color: #FBE700;
@@ -26,9 +26,7 @@
 }
 
 #card-container {
-    display: grid;
-    grid-template-columns: 40% 15% 40%;
-    width: 83%;
+    width: 60%;
     height: 32vh;
     justify-content: space-between;
     margin: auto;
@@ -49,6 +47,12 @@
 
 #plus-minus-buttons {
     padding: 2.35rem 0;
+}
+}
+
+@media screen and (min-width: 1100px) {
+#card-container {
+        width: 50%;
 }
 }
 

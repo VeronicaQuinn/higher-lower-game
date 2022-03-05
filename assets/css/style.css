@@ -96,10 +96,10 @@ h2 {
 #score-area {
     text-align: center;
     font-size: 18px;
+    margin-top: 3vh;
 }
 
 footer {
-
     height: 49px;
     background-color: #0B28E8;
     display: block;
