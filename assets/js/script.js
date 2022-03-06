@@ -70,7 +70,13 @@ document.addEventListener("DOMContentLoaded", function () {
             deck[shuffle2] = shuffled;
         }
         // Start button
-        currentCard = deck.pop();
+        currentCard = deck.pop(); 
+        console.log(currentCard.card)
+        if (currentCard.card.includes("heart") || currentCard.card.includes("diams")) {
+            pileOne.classList.add('red')
+        } else if (currentCard.card.includes("spades") || currentCard.card.includes("clubs")) {
+            pileOne.classList.remove('red')
+        }
         pileOne.innerHTML = currentCard.card;
         // pileOne.style.backgroundColor = "ivory"
         startButton.remove();
@@ -84,19 +90,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
         newCard = deck.pop();
         pileTwo.innerHTML = newCard.card;
+        if (newCard.card.includes("hearts")) {
+            pileTwo.classList.add('red')
+        }
+        else if (newCard.card.includes("diams")) {
+            pileTwo.classList.add('red')
+        }
+         else if (newCard.card.includes("spades") || newCard.card.includes("clubs")) 
+        {
+            pileTwo.classList.remove('red')
+        }
+        console.log(currentCard.value)
+        console.log(e.currentTarget);
         
 
         if (e.currentTarget.dataset.type === "higher") {
             if (newCard.value > currentCard.value) {
                 let oldScore = parseInt(document.getElementById('score').innerText);
                 document.getElementById('score').innerText = ++oldScore;
-                console.log("Yay! You got it!");
+                console.log(newCard.value);
+                console.log(currentCard)
             } else if (newCard.value === currentCard.value) {
                 console.log("That's ok, carry on");
             } else {
                 alert("GAME OVER");
                 document.location.reload();
-                // clearInterval();
+                // clearInterval(interval);
                 console.log("game over, you loser");
             }
         } else {
@@ -109,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 alert("GAME OVER");
                 document.location.reload();
-                // clearInterval();
+                // clearInterval(interval);
                 console.log("game over, you loser")
             }
         }
@@ -117,8 +136,19 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(function () {
             pileOne.innerHTML = newCard.card;
             pileTwo.innerHTML = "";
-            pileTwo.style.backgroundColor = "#0B28E8"
+            // pileTwo.style.backgroundColor = "#0B28E8"
             currentCard = newCard;
+            console.log(currentCard)
+            if (currentCard.card.includes("hearts")) {
+                pileOne.classList.add('red')
+            }
+            else if (currentCard.card.includes("diams")) {
+                pileOne.classList.add('red')
+            }
+             else if (currentCard.card.includes("spades") || currentCard.card.includes("clubs")) 
+             {
+                pileOne.classList.remove('red')
+            }
         }, 1500);
     }
 })
