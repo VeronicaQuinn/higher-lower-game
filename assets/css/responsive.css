@@ -85,9 +85,13 @@ footer {
 #score-area {
     padding-top: 39px;
 }
-
 footer {
-    display: block;
-}
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
+    background-color: #0B28E8;
+    height: 15vh;
+    }
 
 }

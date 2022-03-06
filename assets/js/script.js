@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const pileOne = document.getElementById('left-card');
     const pileTwo = document.getElementById('right-card');
     const buttons = document.getElementsByClassName('guess-button');
+    let piles = document.getElementsByClassName('pile');
 
     // Game play variables
 
@@ -60,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function startGame() {
         // Shuffle deck
+        // piles.style.backgroundColor = "#0B28E8"
         for (let i = 0; i < 1000; i++) {
             let shuffle1 = Math.floor((Math.random() * deck.length));
             let shuffle2 = Math.floor((Math.random() * deck.length));
@@ -70,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Start button
         currentCard = deck.pop();
         pileOne.innerHTML = currentCard.card;
+        // pileOne.style.backgroundColor = "ivory"
         startButton.remove();
 
         for (let button of buttons) {
@@ -81,6 +84,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         newCard = deck.pop();
         pileTwo.innerHTML = newCard.card;
+        
+
         if (e.currentTarget.dataset.type === "higher") {
             if (newCard.value > currentCard.value) {
                 let oldScore = parseInt(document.getElementById('score').innerText);
@@ -91,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 alert("GAME OVER");
                 document.location.reload();
-                clearInterval();
+                // clearInterval();
                 console.log("game over, you loser");
             }
         } else {
@@ -104,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 alert("GAME OVER");
                 document.location.reload();
-                clearInterval();
+                // clearInterval();
                 console.log("game over, you loser")
             }
         }
@@ -112,6 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(function () {
             pileOne.innerHTML = newCard.card;
             pileTwo.innerHTML = "";
+            pileTwo.style.backgroundColor = "#0B28E8"
             currentCard = newCard;
         }, 1500);
     }

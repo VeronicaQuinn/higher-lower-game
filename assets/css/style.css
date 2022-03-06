@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #FBE700 ;
+}
+
 h1 {
     text-align: center;
     margin: 0;
@@ -24,7 +28,7 @@ h2 {
 
 #card-container {
     display: flex;
-    width: 91%;
+    width: 85%;
     height: 32vh;
     justify-content: space-between;
     /* align-content: center; */
@@ -100,9 +104,27 @@ h2 {
 }
 
 footer {
-    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    align-items: flex-start;
     background-color: #0B28E8;
-    display: block;
-    clear: both;
+    height: 15vh;
+    width: 100%;
+    }
 
+#footer-text {
+    color: #FBE700;
+    font-size: 4vh;
+}
+
+#facebook > a {
+    list-style-type: none;
+    color: #FBE700;
+    font-size: 4vh;
+    text-shadow: 3px 3px #D23A06;
+}
+
+#facebook > a:hover {
+    color: #34C972;
 }
