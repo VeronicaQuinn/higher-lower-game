@@ -6,6 +6,10 @@ body {
     background-color: #FBE700 ;
 }
 
+.hide {
+    display: none;
+}
+
 h1 {
     text-align: center;
     margin: 0;
@@ -13,12 +17,30 @@ h1 {
     padding: 1rem 0;
 }
 
-
-#game-area {
+.game-area {
     height: 59vh;
     background-color: #d0eeff;
     padding: 1rem 0;
     border-radius: 8px;
+}
+
+#intro-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-buttons {
+    height: 10vh;
+    width: 15rem;
+    border-color: #D23A06;
+    border-radius: 23px;
+    border-width: thick;
+    font-size: 4vh;
+    font-weight: bold;
+    background: #FBE700;
+    color: #0B28E8;
 }
 
 #card-container {
