@@ -5,6 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // HTML elements
 
+    const introPage = document.getElementById('intro-page');
+    const rulesPage = document.getElementById('rules-page');
+    const gamePage = document.getElementById('game-page');
+    const rulesButton = document.getElementById('rules-btn');
+    const playButton = document.getElementById('play-game');
     const startButton = document.getElementById('start-game');
     const pileOne = document.getElementById('left-card');
     const pileTwo = document.getElementById('right-card');
@@ -19,7 +24,24 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentCard;
     let newCard;
 
+    // Add button Event Listeners
+
+    rulesButton.addEventListener('click', goToRules);
+    playButton.addEventListener('click', playGame);
     startButton.addEventListener('click', startGame);
+
+    // Page navigation functions
+    
+    function goToRules() {
+        introPage.classList.add('hide');
+        rulesPage.classList.remove('hide');
+    }
+    
+    function playGame() {
+        gamePage.classList.remove('hide');
+        introPage.classList.add('hide');
+        rulesPage.classList.add('hide');
+    }
 
     // Create deck and convert strings into number values
 
@@ -70,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
             deck[shuffle2] = shuffled;
         }
         // Start button
-        currentCard = deck.pop(); 
+        currentCard = deck.pop();
         console.log(currentCard.card)
         if (currentCard.card.includes("heart") || currentCard.card.includes("diams")) {
             pileOne.classList.add('red')
@@ -92,17 +114,14 @@ document.addEventListener("DOMContentLoaded", function () {
         pileTwo.innerHTML = newCard.card;
         if (newCard.card.includes("hearts")) {
             pileTwo.classList.add('red')
-        }
-        else if (newCard.card.includes("diams")) {
+        } else if (newCard.card.includes("diams")) {
             pileTwo.classList.add('red')
-        }
-         else if (newCard.card.includes("spades") || newCard.card.includes("clubs")) 
-        {
+        } else if (newCard.card.includes("spades") || newCard.card.includes("clubs")) {
             pileTwo.classList.remove('red')
         }
         console.log(currentCard.value)
         console.log(e.currentTarget);
-        
+
 
         if (e.currentTarget.dataset.type === "higher") {
             if (newCard.value > currentCard.value) {
@@ -141,12 +160,9 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log(currentCard)
             if (currentCard.card.includes("hearts")) {
                 pileOne.classList.add('red')
-            }
-            else if (currentCard.card.includes("diams")) {
+            } else if (currentCard.card.includes("diams")) {
                 pileOne.classList.add('red')
-            }
-             else if (currentCard.card.includes("spades") || currentCard.card.includes("clubs")) 
-             {
+            } else if (currentCard.card.includes("spades") || currentCard.card.includes("clubs")) {
                 pileOne.classList.remove('red')
             }
         }, 1500);
