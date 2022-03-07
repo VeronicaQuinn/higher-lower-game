@@ -66,7 +66,7 @@ h1 {
 
 h1 {
     height: 198px;
-    padding-bottom: 1px;
+    padding-bottom: 0;
 }
 
 h2 {
@@ -81,9 +81,9 @@ h2 {
     height: 68vh;
 }
 
-footer {
+/* footer {
     display: none;
-}
+} */
 }
 
 @media screen and (min-height: 728px) {

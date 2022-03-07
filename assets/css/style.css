@@ -6,10 +6,6 @@ body {
     background-color: #FBE700 ;
 }
 
-.hide {
-    display: none;
-}
-
 h1 {
     text-align: center;
     margin: 0;
@@ -17,19 +13,23 @@ h1 {
     padding: 1rem 0;
 }
 
-.game-area {
+#game-area {
     height: 59vh;
     background-color: #d0eeff;
     padding: 1rem 0;
     border-radius: 8px;
 }
-
-#intro-page {
+#intro-page,
+#play-game-div {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    padding: 7vh 0;
 }
+ /* {
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0;
+} */
 
 .nav-buttons {
     height: 10vh;
@@ -43,6 +43,7 @@ h1 {
     color: #0B28E8;
 }
 
+
 #card-container {
     display: flex;
     width: 85%;
@@ -53,7 +54,7 @@ h1 {
 }
 
 .pile {
-    border: 1px solid darkorchid;
+    border: 1px solid #0B28E8;
     width: 90px;
     height: 140px;
     border-radius: 6px;
@@ -118,7 +119,7 @@ h1 {
     margin-top: 3vh;
 }
 
-footer {
+/* footer {
     display: flex;
     justify-content: center;
     align-content: space-around;
@@ -126,7 +127,7 @@ footer {
     background-color: #0B28E8;
     height: 15vh;
     width: 100%;
-    }
+    } */
 
 #footer-text {
     color: #FBE700;
@@ -146,4 +147,9 @@ footer {
 
 .black {
     color: black;
+}
+
+
+.hide {
+    display: none;
 }

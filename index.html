@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/cb0be301ad.js" crossorigin="anonymous"></script>
-    
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
@@ -17,17 +17,17 @@
 <body>
     <!-- Heading -->
     <h1 class="heading">
-        <img class="logo" src="./assets/images/logo.png"
-                alt="Logo">
+        <img class="logo" src="./assets/images/logo.png" alt="Logo">
     </h1>
 
     <!-- Intro Page -->
-    <div id="intro-page" class="game-area">
+    <div id="game-area">
+    <div id="intro-page">
         <button id="rules-btn" class="nav-buttons">How to Play</button>
-        <button id="play-game" class="nav-buttons">Play</button>
+        <!-- <button id="play-game">Play</button> -->
     </div>
-    <!-- Rules Page   -->
-    <div id="rules-page" class="game-area hide">
+
+    <div id="rules-page" class="hide game-area">
         <p>
             <ol>
                 <li>Select START to begin</li>
@@ -40,48 +40,50 @@
                 <li>No problem, just play again</li>
             </ol>
         </p>
-        <div>
-            <button id="play-game">Play</button>
-        </div>
+    </div>
+    <div id="play-game-div">
+        <button id="play-game" class="nav-buttons">Play</button>
     </div>
 
+
+
     <!-- Game Page -->
-<div id="game-page" class="hide game-area">
-    <div id="game-area">
+    <div id="game-page" class="hide game-area">
+
         <div id="card-container">
-<!-- Card piles and Start Button -->
+            <!-- Card piles and Start Button -->
             <span id="left-card" class="pile"></span>
             <button id="start-game">START</button>
             <span id="right-card" class="pile"></span>
 
         </div>
-    
-    <!-- Selection buttons -->
-    <div id="plus-minus-buttons">
-        <button data-type="higher" id="higher" class="guess-button green" aria-label="Choose this to guess higher">
-            <i class="fas fa-plus-circle"></i>                           
-        </button>
-        <button data-type="lower" id="lower" class="guess-button red" aria-label="Choose this to guess lower">
-            <i class="fas fa-minus-circle"></i>
-        </button>
+
+        <!-- Selection buttons -->
+        <div id="plus-minus-buttons">
+            <button data-type="higher" id="higher" class="guess-button green" aria-label="Choose this to guess higher">
+                <i class="fas fa-plus-circle"></i>
+            </button>
+            <button data-type="lower" id="lower" class="guess-button red" aria-label="Choose this to guess lower">
+                <i class="fas fa-minus-circle"></i>
+            </button>
+        </div>
+
+        <!-- Score counter -->
+        <div id="score-area">
+            <h3 class="scores">SCORE: <span id="score"> 0</span></h3>
+        </div>
+    </div>
     </div>
 
-    <!-- Score counter -->
-    <div id="score-area">
-        <h3 class="scores">SCORE: <span id="score"> 0</span></h3>
-    </div>
-    </div>
-</div>
+    <footer id="footer" class="hide">
+        <span id="footer-text">Like us on Facebook!</span>
+        <li id="facebook">
+            <a href="https://facebook.com" target="_blank" rel="noopener"
+                aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook-square"></i></a>
+        </li>
+    </footer>
 
-<footer>
-    <span id="footer-text">Like us on Facebook!</span>
-    <li id="facebook">
-        <a href="https://facebook.com" target="_blank" rel="noopener"
-            aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook-square"></i></a>
-    </li>
-</footer>
-
-<script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

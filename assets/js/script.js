@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const pileOne = document.getElementById('left-card');
     const pileTwo = document.getElementById('right-card');
     const buttons = document.getElementsByClassName('guess-button');
+    const footer = document.getElementsByTagName('footer');
     let piles = document.getElementsByClassName('pile');
 
     // Game play variables
@@ -31,17 +32,21 @@ document.addEventListener("DOMContentLoaded", function () {
     startButton.addEventListener('click', startGame);
 
     // Page navigation functions
-    
+
     function goToRules() {
         introPage.classList.add('hide');
         rulesPage.classList.remove('hide');
+        rulesPage.classList.remove('hide');
+
     }
-    
+    console.log(goToRules)
     function playGame() {
         gamePage.classList.remove('hide');
         introPage.classList.add('hide');
         rulesPage.classList.add('hide');
+        playButton.classList.add('hide');
     }
+    console.log(playGame)
 
     // Create deck and convert strings into number values
 

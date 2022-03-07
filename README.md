@@ -12,7 +12,7 @@ The main objective of this project is to demonstrate competency in HTML, CSS and
 A simple guessing game based on the solitaire card game.  Players have to guess if the next card is higher or lower than the card shown.  This game is suitable for all ages as it is easy to play and follow but challenges players to calculate odds as well as involving a bit of luck!
 
 While the game play is simple, the coding in JavaScript presented a number of challenges in implementation
-
+---
 ### Existing Features
 
 - __Higher or Lower???? Logo__
@@ -39,7 +39,7 @@ While the game play is simple, the coding in JavaScript presented a number of ch
 - __Footer__
 
   - A footer with a Facebook link.  Same blue as logo.  Gives a nice finish to the page on bigger screens.  Is hidden on certain height screens to allow game area to 'breathe'
-
+---
 ## Testing
 
 ### Validator Testing 
@@ -57,7 +57,15 @@ While the game play is simple, the coding in JavaScript presented a number of ch
 
 #### Desktop
 ![image](https://user-images.githubusercontent.com/95372009/156940589-0ae83c05-fb88-4d98-91c2-c9cd62cdfb7d.png)
+---
+## Bugs
+    Deck array not reading values
+- ![image](https://user-images.githubusercontent.com/95372009/156895637-e2e59f72-ccb9-4757-8224-ee8b80772f95.png)
 
+    Page Navigation 'hide' unsuccessful
+- ![image](https://user-images.githubusercontent.com/95372009/157079700-0fd9eb51-8788-4351-b5a7-27b1ed46a38c.png)
+
+---
 ## Site Deployment
 
 My site was created using Gitpod and deployed using Github pages
@@ -69,7 +77,7 @@ My site was created using Gitpod and deployed using Github pages
 5. Select BRANCH: MAIN
 6. SAVE
 7. Happy Days!  Site is live!! (url) generated
-
+---
 ## Credit Where Credit's Due
 
 - [Code Intitute Slack]
@@ -91,6 +99,4 @@ My site was created using Gitpod and deployed using Github pages
 
 
 
-Bugs
-Deck array not reading values
-![image](https://user-images.githubusercontent.com/95372009/156895637-e2e59f72-ccb9-4757-8224-ee8b80772f95.png)
+
