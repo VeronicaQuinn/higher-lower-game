@@ -2,6 +2,9 @@
     #card-container {
         width: 95%;
     }
+
+    #plus-minus-buttons {
+        padding: 1.35rem 0 1rem;
 }
 
 @media screen and (min-width: 444px) {
@@ -48,10 +51,6 @@
     .guess-button i {
         font-size: 4.6rem;
     }
-
-    #plus-minus-buttons {
-        padding: 2.35rem 0;
-    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -60,51 +59,47 @@
     }
 }
 
-@media screen and (min-height: 450px) {
+@media screen and (min-height: 480px) {
     h1 {
         padding: 0;
     }
 
     #game-area {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-height: 599px) {
+
+    h1 {
+        height: 198px;
+        padding-bottom: 0;
+    }
+    
+    #plus-minus-buttons {
+        padding: 1.5rem 0 .4rem;
+    }
+
+    #game-area {
         height: 57vh;
     }
+}
 
-    @media screen and (min-height: 599px) {
+@media screen and (min-height: 728px) {
 
-        h1 {
-            height: 198px;
-            padding-bottom: 0;
-        }
-
-
-
-        #plus-minus-buttons {
-            padding: 3.35rem 0 1rem;
-        }
-
-        #game-area {
-            height: 64vh;
-        }
-
-        /* footer {
-    display: none;
-} */
+    #score-area {
+        padding-top: 39px;
     }
 
-    @media screen and (min-height: 728px) {
-
-        #score-area {
-            padding-top: 39px;
-        }
-
-        /* footer {
-    display: flex;
-    justify-content: center;
-    align-content: space-around;
-    align-items: flex-start;
-    background-color: #0B28E8;
-    height: 15vh;
-    } */
-
+    #game-area {
+        height: 63vh;
     }
+
+}
+
+@media screen and (min-height: 850px) {
+    #game-area {
+        height: 70vh;
+    }
+}
 }
