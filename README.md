@@ -88,9 +88,9 @@ The original score came back as too low on ACCESSIBILITY so I added aria-labels 
 
     Page Navigation 'hide' unsuccessful<br>
  ![image](https://user-images.githubusercontent.com/95372009/157079700-0fd9eb51-8788-4351-b5a7-27b1ed46a38c.png)
-  Solution:  Change display in CSS on all affected elements
+  Solution:  Change display in CSS on all affected elements and deleted redundant PLAY button (had one per section)
 
-    'Game Over' was causing the Intro page to reload.  See commented out code and solution.  Also, delete redundant PLAY button (had one per section<br>
+    'Game Over' was causing the Intro page to reload.  See commented out code and solution.  <br>
  ![image](https://user-images.githubusercontent.com/95372009/157241462-fcecbe4f-a966-4df9-a09c-6994f97d921a.png)
 
 
@@ -107,29 +107,51 @@ My site was created using Gitpod and deployed using Github pages
 6. SAVE
 7. Happy Days!  Site is live!! (url) generated
 ---
+## Technologies, Credit and Resources Used
+
+<ul>
+<li>HTMLS</li>
+<li>CSS</li>
+<li>Gitpod</li>
+<li>Github</li>
+<li>Code Institute Diploma in Software Development (E-commerce Applications) Programme materials</li>
+<li>Code Institute Slack Community
+<li>Love Maths walk-through sample project</li>
+<li>https://www.w3schools.com</li>
+<li>https://stackoverflow.com</li>
+<li>YouTube</li>
+<li>Font Awesome (icons)</li>
+</ul> 
+
 ## Credit Where Credit's Due
 
 - [Code Intitute Slack]
-    - (https://slack.com/) CI community provided so much help thoughout the project development. Huge thank you to all the Slack CI fellow students, my mentor, and our msletb-nov-2021 cohort facilitator Kasia Bogucka.  An extra THANK YOU to Dave Horrocks PP2 Channel Leader<br>
+    - (https://slack.com/) CI community provided so much help thoughout the project development. Huge thank you to all the Slack CI fellow students, my mentor, and our msletb-nov-2021 cohort facilitator Kasia Bogucka.  An extra THANK YOU to Dave Horrocks PP2 Channel Leader <br>
 
 - To create original deck of cards 
     - [YouTube WebDev Made Simple](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw)
-    - and [YouTube MrGcoding](https://www.youtube.com/hashtag/javascript)<br>
+    - and [YouTube MrGcoding](https://www.youtube.com/hashtag/javascript) <br>
 
 - To shuffle and import deck to DOM 
-    - [Thatsoftwaredude.com/](https://www.thatsoftwaredude.com/content/6196/coding-a-card-deck-in-javascript)<br>
+    - [Thatsoftwaredude.com/](https://www.thatsoftwaredude.com/content/6196/coding-a-card-deck-in-javascript) <br>
 
 - Game over 
-    - [DelftStack](https://www.delftstack.com/howto/javascript/javascript-wait-for-function-to-finish/)<br>
+    - [DelftStack](https://www.delftstack.com/howto/javascript/javascript-wait-for-function-to-finish/) <br>
 
 - To convert strings to number values 
-    - [Dave Horrocks, PP2 Leader]<br>
+    - Dave Horrocks, PP2 Leader <br>
 
 - To style deck font color in Javascript 
-    -[Code Institute Tutor Support, Ger (legend)]<br>
-- Logo created using Free Logo Design
-    - ![Logo](../higher-lower-game/assets/images/logo.png)<br>   
+    - Code Institute Tutor Support, Ger (legend) <br>
 
+- Logo created using Free Logo Design
+    - ![Logo](../higher-lower-game/assets/images/logo.png) <br>
+
+- Toggling sections
+    - Rachel Rock, fellow Code Institute co-hort student <br>
+
+- Inserting images into README.md
+    - [Justyna Golawska](https://medium.com/@justynagolawska/how-to-easily-add-screenshots-into-your-readme-file-on-github-d806a01d6ffd)
 
 
 
