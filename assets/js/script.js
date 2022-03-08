@@ -138,7 +138,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log("That's ok, carry on");
             } else {
                 alert("GAME OVER");
-                document.location.reload();
+                document.getElementById('score').innerHTML = 0;
+                // document.location.reload();
                 // clearInterval(interval);
                 console.log("game over, you loser");
             }
@@ -151,7 +152,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log("That's ok, carry on");
             } else {
                 alert("GAME OVER");
-                document.location.reload();
+                document.getElementById('score').innerHTML = 0;
+                // document.location.reload();
                 // clearInterval(interval);
                 console.log("game over, you loser")
             }

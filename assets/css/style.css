@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #FBE700 ;
+    background-color: #FBE700;
 }
 
 h1 {
@@ -13,29 +13,33 @@ h1 {
     padding: 1rem 0;
 }
 
+h2 {
+    text-align: center;
+    margin: 0;
+    color: #0B28E8;
+    margin-bottom: 1vh;
+}
+
 #game-area {
     height: 59vh;
     background-color: #d0eeff;
-    padding: 1rem 0;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+/* Landing Page */
 #intro-page {
-    padding: 9vh 0;
+    padding: 5vh 0;
     text-align: center;
 }
+
 #play-game-div {
     text-align: center;
-    /* padding: 7vh 0; */
 }
- /* {
-    display: flex;
-    justify-content: center;
-    padding: 5vh 0;
-} */
 
 .nav-buttons {
-    height: 11vh;
-    width: 14rem;
     border-color: #D23A06;
     border-radius: 35px;
     border-width: thick;
@@ -43,12 +47,29 @@ h1 {
     font-weight: bold;
     background: #FBE700;
     color: #0B28E8;
-    margin-top: 5vh;
+    text-shadow: 2.5px 2px #34C972;
 }
 
-#rules-page > p {
+#play-game {
+    height: 10vh;
+    width: 10rem;
+    margin-top: 3vh;
+}
+
+#rules-btn {
+    height: 11vh;
+    width: 14rem;
+    margin-top: -4vh;
+}
+
+/* Rules Page */
+#rules-page>div {
     border: #0B28E8 2px dashed;
-    }
+}
+
+ul {
+    padding-left: 0;
+}
 
 li {
     font-size: medium;
@@ -58,6 +79,8 @@ li {
     text-align: center;
     list-style-type: none;
 }
+
+/* Game Page */
 #card-container {
     display: flex;
     width: 85%;
@@ -92,7 +115,6 @@ li {
     color: #0B28E8;
 }
 
-
 #plus-minus-buttons {
     display: flex;
     justify-content: space-evenly;
@@ -117,6 +139,7 @@ li {
 .green {
     color: #34C972;
 }
+
 .scores {
     font-size: 40px;
     margin: 0;
@@ -133,26 +156,27 @@ li {
     margin-top: 3vh;
 }
 
- footer {
+/* Footer */
+footer {
     display: flex;
-    justify-content: center;
-    align-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     background-color: #0B28E8;
-    height: 15vh;
+    height: 10vh;
     width: 100%;
-    } 
+    justify-content: space-evenly;
+}
 
 #footer-text {
     color: #FBE700;
     font-size: 4vh;
+    text-shadow: 2px 2px #D23A06;
 }
 
 #facebook > a {
     list-style-type: none;
     color: #FBE700;
     font-size: 4vh;
-    text-shadow: 3px 3px #D23A06;
+    text-shadow: 2px 2px #D23A06;
 }
 
 #facebook > a:hover {
@@ -163,7 +187,7 @@ li {
     color: black;
 }
 
-
+/* Toggle */
 .hide {
     display: none;
 }
