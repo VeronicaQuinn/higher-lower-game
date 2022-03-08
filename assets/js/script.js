@@ -9,12 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const rulesPage = document.getElementById('rules-page');
     const gamePage = document.getElementById('game-page');
     const rulesButton = document.getElementById('rules-btn');
+    const playBtnContainer = document.getElementById('play-game-div');
     const playButton = document.getElementById('play-game');
     const startButton = document.getElementById('start-game');
     const pileOne = document.getElementById('left-card');
     const pileTwo = document.getElementById('right-card');
     const buttons = document.getElementsByClassName('guess-button');
-    const footer = document.getElementsByTagName('footer');
+    // const footer = document.getElementsByTagName('footer');
     let piles = document.getElementsByClassName('pile');
 
     // Game play variables
@@ -36,15 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
     function goToRules() {
         introPage.classList.add('hide');
         rulesPage.classList.remove('hide');
-        rulesPage.classList.remove('hide');
-
+        // playBtnContainer.classList.remove('hide');
     }
     console.log(goToRules)
     function playGame() {
         gamePage.classList.remove('hide');
         introPage.classList.add('hide');
         rulesPage.classList.add('hide');
-        playButton.classList.add('hide');
+        playBtnContainer.classList.add('hide');
     }
     console.log(playGame)
 
