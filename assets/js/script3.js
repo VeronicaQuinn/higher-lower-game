@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('score').innerHTML = 0;
         pileOne.innerHTML = "";
         createDeck();
-    console.log(score);
         
     }
     console.log(goToGame)
@@ -141,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log("That's ok, carry on");
                 setTimeout(playNextRound, 1500);
             } else {
-                alert('bad');
+                alert('Too bad!  Game Over! Never mind, try again!');
                 pileTwo.innerHTML = '';
                 goToGame();
             }
@@ -152,9 +151,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(playNextRound, 1500);
             } else if (newCard.value === currentCard.value) {
                 console.log("That's ok, carry on");
-                setTimeout(playUserGuess, 1500);
+                setTimeout(playNextRound, 1500);
             } else {
-                alert('bad');
+                alert('Too bad!  Game Over! Never mind, try again!');
                 pileTwo.innerHTML = '';
                 goToGame();
             }
@@ -168,6 +167,9 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (currentCard.card.includes("spades") || currentCard.card.includes("clubs")) {
             pile.classList.remove('red')
         }
+        // pileOne.innerHTML = newCard.card;
+        //     pileTwo.innerHTML = "";
+        //     currentCard = newCard;
         pile.innerHTML = currentCard.card;
     }
 })

@@ -48,13 +48,13 @@ While the game play is simple, the coding in JavaScript presented a number of ch
   - The START button features the same colors as the logo
   - The START button is removed when it is selected to prevent the player pressing it during game play.  It reveals the first card on the left, the comparison card <br>
 
-- __The Plus-Minus Buttons__
+  - __The Plus-Minus Buttons__
 
   - This div contains the buttons used for player to guess the value of the next card
   - The PLUS button features a large plus sign in the same green featured in the logo
   - The MINUS button features a large minus sign in the same red featured in the logo, both of these buttons are clearly visible and have aria-labels in html <br>
 
-- __The Score Area__
+  - __The Score Area__
 
   - A SCORE counter that implements correct answers.  Same blue as logo <br>
 
@@ -64,10 +64,20 @@ __FOOTER__
 
 ## Features to be Implemented in Future
 
-- __POP UP MODAL__
+- __POP UP MODALS__
 
-  - I'd like to add pop up modals to appear whenever a player makes a move, ie
-  - The MINUS button features a large minus sign in the same red featured in the logo, both of these buttons are clearly visible and have aria-labels in html <br>
+  - Adding pop up modals after every player move, for example, 'Well done!', a large checkmark, a sad face emoji, etc
+<br>
+
+- __HIGH SCORES STORAGE__
+
+  - Implementing a local storage API to log player's own high scores and other players' high
+<br>
+
+- __STYLE CARD BACKS__
+
+  - Giving a style to the 'decks'
+<br>
 
 ---
 ## Testing
