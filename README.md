@@ -61,6 +61,14 @@ While the game play is simple, the coding in JavaScript presented a number of ch
 __FOOTER__
 
   - A footer with a Facebook link.  Same blue as logo
+
+## Features to be Implemented in Future
+
+- __POP UP MODAL__
+
+  - I'd like to add pop up modals to appear whenever a player makes a move, ie
+  - The MINUS button features a large minus sign in the same red featured in the logo, both of these buttons are clearly visible and have aria-labels in html <br>
+
 ---
 ## Testing
 

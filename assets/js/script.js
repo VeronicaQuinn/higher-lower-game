@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const pileOne = document.getElementById('left-card');
     const pileTwo = document.getElementById('right-card');
     const buttons = document.getElementsByClassName('guess-button');
-    // const footer = document.getElementsByTagName('footer');
     let piles = document.getElementsByClassName('pile');
 
     // Game play variables
@@ -114,7 +113,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function guess(e) {
-
         newCard = deck.pop();
         pileTwo.innerHTML = newCard.card;
         if (newCard.card.includes("hearts")) {
@@ -126,7 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         console.log(currentCard.value)
         console.log(e.currentTarget);
-
 
         if (e.currentTarget.dataset.type === "higher") {
             if (newCard.value > currentCard.value) {

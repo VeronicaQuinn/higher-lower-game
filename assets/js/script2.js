@@ -116,14 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // for (let button of buttons) {
 
-    // }
-
-    // function styleCards() {
-
-    // }
-
-
-    // Shuffle deck
+        // Shuffle deck
     // startGameBtn.addEventListener('click', shuffleDeck);
 
     // function shuffleDeck() {
@@ -137,9 +130,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // }
     // console.log(shuffleDeck)
-
-
-
 
     // Start button
     function startGame() {    
@@ -173,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById('score').innerHTML = 0;
                 // document.location.reload();
                 // clearInterval(interval);
-                console.log("game over, you loser");
+                console.log("game over");
             }
         } else {
             if (newCard.value < currentCard.value) {
@@ -187,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById('score').innerHTML = 0;
                 // document.location.reload();
                 // clearInterval(interval);
-                console.log("game over, you loser")
+                console.log("game over")
             }
         }
     }
@@ -238,7 +228,6 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
             pileOne.innerHTML = newCard.card;
             pileTwo.innerHTML = "";
-            // pileTwo.style.backgroundColor = "#0B28E8"
             currentCard = newCard;
             console.log(currentCard);
             //         if (currentCard.card.includes("hearts")) {
