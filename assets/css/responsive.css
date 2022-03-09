@@ -59,13 +59,35 @@
     }
 }
 
-@media screen and (min-height: 480px) {
+@media screen and (min-height: 479px) {
     h1 {
         padding: 0;
     }
 
     #game-area {
         height: 50vh;
+    }
+
+    .pile {
+        width: 83px;
+        height: 123px;
+    }
+
+    ul {
+        margin: 0.5rem;
+    }
+
+    #plus-minus-buttons {
+        padding: 0;
+    }
+
+    .guess-button i {
+        font-size: 3.3rem;
+    }
+
+    .scores {
+        font-size: 27px;
+        margin: 0;
     }
 }
 
@@ -82,6 +104,16 @@
 
     #game-area {
         height: 57vh;
+    }
+
+    .pile {
+        width: 135px;
+        height: 201px;
+        border-radius: 9px;
+    }
+
+    .guess-button i {
+        font-size: 3.8rem;
     }
 }
 
