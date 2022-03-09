@@ -11,9 +11,12 @@ The main objective of this project is to demonstrate competency in HTML, CSS and
 
 A simple guessing game based on the solitaire card game.  Players have to guess if the next card is higher or lower than the card shown.  This game is suitable for all ages as it is easy to play and follow but challenges players to calculate odds as well as involving a bit of luck!
 
-  While the game play is simple, the coding in JavaScript presented a number of challenges in implementation
+While the game play is simple, the coding in JavaScript presented a number of challenges in implementation
 ---
-### Existing Features
+![image](https://user-images.githubusercontent.com/95372009/157343631-1ba0ff44-9f93-4267-8de1-c7fe678a1052.png)
+![image](https://user-images.githubusercontent.com/95372009/157347132-45f77abe-a0da-43d0-9a15-9c0e54bc729c.png)
+![image](https://user-images.githubusercontent.com/95372009/157347206-45a966e9-cd2f-4540-8b95-3537da62b844.png)
+## Existing Features
 
 - __Higher or Lower???? LOGO__
 
@@ -63,15 +66,22 @@ __FOOTER__
 
 ### Validator Testing 
 
-- HTML
+#### W3C HTML and CSS3 Validators
 
-- CSS
+No errors were returned after testing all pages within the site. 
+
+![image](https://user-images.githubusercontent.com/95372009/157347533-a0ddee88-241f-480b-88c4-1d175df834e9.png)
+<br>
+![image](https://user-images.githubusercontent.com/95372009/157347813-d06c6325-437a-4d38-94cd-d81cc465c0d0.png)
+<br>
+![image](https://user-images.githubusercontent.com/95372009/157347965-30952f4f-7601-4164-8899-4722faf03108.png)
+<br>
 
 - JavaScript
 
 ### Accessibility
 
-The original score came back as too low on ACCESSIBILITY so I added aria-labels to the buttons and solved the problem
+The original score came back as too low on ACCESSIBILITY so aria-labels were added to the buttons
 
 #### Mobile<br>
 ![image](https://user-images.githubusercontent.com/95372009/156940407-e64b5ee0-8883-4cd0-90d9-36f2916e8b5d.png)
@@ -80,17 +90,19 @@ The original score came back as too low on ACCESSIBILITY so I added aria-labels 
 ![image](https://user-images.githubusercontent.com/95372009/156940589-0ae83c05-fb88-4d98-91c2-c9cd62cdfb7d.png)
 ---
 ## Bugs
-    Deck array not reading values<br>
+    Deck array not reading values 
+  
  ![image](https://user-images.githubusercontent.com/95372009/156895637-e2e59f72-ccb9-4757-8224-ee8b80772f95.png)<br>
   Solution:  Create a switch/case that assigns values to strings<br>
   ![image](https://user-images.githubusercontent.com/95372009/157242560-aec07236-3279-4048-bacc-907c8d0bc1d1.png)
 
 
-    Page Navigation 'hide' unsuccessful<br>
+    Page Navigation 'hide' unsuccessful
+  
  ![image](https://user-images.githubusercontent.com/95372009/157079700-0fd9eb51-8788-4351-b5a7-27b1ed46a38c.png)
   Solution:  Change display in CSS on all affected elements and deleted redundant PLAY button (had one per section)
 
-    'Game Over' was causing the Intro page to reload.  See commented out code and solution.  <br>
+    'Game Over' was causing the Intro page to reload.  See commented out code and solution. 
  ![image](https://user-images.githubusercontent.com/95372009/157241462-fcecbe4f-a966-4df9-a09c-6994f97d921a.png)
 
 
@@ -121,6 +133,9 @@ My site was created using Gitpod and deployed using Github pages
 <li>https://stackoverflow.com</li>
 <li>YouTube</li>
 <li>Font Awesome (icons)</li>
+<li>[Am I Responsive?](http://ami.responsivedesign.is/?url=https%3A%2F%2Fveronicaquinn-higherlowe-8ck0xsfrhrc.ws-eu34xl.gitpod.io%2F#)</li>
+<li>[Favicon.io](https://favicon.io/)</li>
+
 </ul> 
 
 ## Credit Where Credit's Due
