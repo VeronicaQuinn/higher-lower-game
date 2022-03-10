@@ -1,4 +1,4 @@
-/* jshint esversion: 8, jquery: true */
+/* jshint esversion: 8 */
 // Waits for DOM to load before running any other functions
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -36,9 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function goToRules() {
         introPage.classList.add('hide');
         rulesPage.classList.remove('hide');
-        // playBtnContainer.classList.remove('hide');
     }
-    console.log(goToRules)
 
     function goToGame() {
         gamePage.classList.remove('hide');
@@ -49,9 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('score').innerHTML = 0;
         pileOne.innerHTML = "";
         createDeck();
-        
     }
-    console.log(goToGame)
 
     // Create deck and convert strings into number values
 
@@ -93,7 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         shuffleDeck();
     }
-    console.log(createDeck)
+
+    // Shuffle deck
 
     function shuffleDeck() {
         for (let i = 0; i < 1000; i++) {
@@ -104,36 +101,36 @@ document.addEventListener("DOMContentLoaded", function () {
             deck[shuffle2] = shuffled;
         }
     }
-    console.log(shuffleDeck)
 
     // Start button
-    function playRound(){
+
+    function playRound() {
         console.log(deck);
         currentCard = deck.pop();
         displayCard(currentCard, pileOne);
         playRoundBtn.classList.add('hide');
     }
-    console.log(playRound)
 
-    function playNextRound(){
+    // Restart Game
+
+    function playNextRound() {
         currentCard = newCard;
         displayCard(currentCard, pileOne);
         pileTwo.innerHTML = '';
         updateScore();
     }
 
-    function updateScore(){
+    function updateScore() {
         let oldScore = parseInt(document.getElementById('score').innerText);
         document.getElementById('score').innerText = ++oldScore;
     }
 
-    function playUserGuess(e){
+    function playUserGuess(e) {
         const selectedOption = e.currentTarget.dataset.type;
         newCard = deck.pop();
         displayCard(newCard, pileTwo);
-        console.log('user guess ' + selectedOption);
-        if (selectedOption ==='higher'){
-            if(currentCard.value < newCard.value){
+        if (selectedOption === 'higher') {
+            if (currentCard.value < newCard.value) {
                 console.log('Good');
                 setTimeout(playNextRound, 1500);
             } else if (newCard.value === currentCard.value) {
@@ -145,12 +142,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 goToGame();
             }
         }
-        if (selectedOption ==='lower'){
-            if(currentCard.value > newCard.value){
-                console.log('Good');
+        if (selectedOption === 'lower') {
+            if (currentCard.value > newCard.value) {
                 setTimeout(playNextRound, 1500);
             } else if (newCard.value === currentCard.value) {
-                console.log("That's ok, carry on");
                 setTimeout(playNextRound, 1500);
             } else {
                 alert('Too bad!  Game Over! Never mind, try again!');
@@ -158,18 +153,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 goToGame();
             }
         }
-
     }
 
-    function displayCard(currentCard, pile){
+    // Card display and style cards
+
+    function displayCard(currentCard, pile) {
         if (currentCard.card.includes("heart") || currentCard.card.includes("diams")) {
             pile.classList.add('red');
         } else if (currentCard.card.includes("spades") || currentCard.card.includes("clubs")) {
-            pile.classList.remove('red')
+            pile.classList.remove('red');
         }
-        // pileOne.innerHTML = newCard.card;
-        //     pileTwo.innerHTML = "";
-        //     currentCard = newCard;
         pile.innerHTML = currentCard.card;
     }
-})
+});

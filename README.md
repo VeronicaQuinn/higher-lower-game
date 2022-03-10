@@ -66,7 +66,7 @@ __FOOTER__
 
 - __POP UP MODALS__
 
-  - Adding pop up modals after every player move, for example, 'Well done!', a large checkmark, a sad face emoji, etc
+  - Adding pop up modals after every player move, for example, 'Well done!', a large checkmark, a sad face emoji, etc instead of alerts
 <br>
 
 - __HIGH SCORES STORAGE__
@@ -140,7 +140,7 @@ My site was created using Gitpod and deployed using Github pages
 ## Technologies, Credit and Resources Used
 
 <ul>
-<li>HTMLS</li>
+<li>HTML</li>
 <li>CSS</li>
 <li>Gitpod</li>
 <li>Github</li>
@@ -158,8 +158,8 @@ My site was created using Gitpod and deployed using Github pages
 
 ## Credit Where Credit's Due
 
-- [Code Intitute Slack]
-    - (https://slack.com/) CI community provided so much help thoughout the project development. Huge thank you to all the Slack CI fellow students, my mentor, and our msletb-nov-2021 cohort facilitator Kasia Bogucka.  An extra THANK YOU to Dave Horrocks PP2 Channel Leader <br>
+- [Code Institute Slack]
+    - (https://slack.com/) CI community provided so much help throughout the project development. Huge thank you to all the Slack CI fellow students, my mentor, and our msletb-nov-2021 cohort facilitator Kasia Bogucka.  An extra THANK YOU to Dave Horrocks PP2 Channel Leader.  And a massive thanks to my mentor Antonio Rodriguez <br>
 
 - To create original deck of cards 
     - [YouTube WebDev Made Simple](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw)
