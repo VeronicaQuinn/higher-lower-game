@@ -71,7 +71,7 @@ __FOOTER__
 
 - __HIGH SCORES STORAGE__
 
-  - Implementing a local storage API to log player's own high scores and other players' high
+  - Implementing a local storage API to log player's own high scores and possibly other players
 <br>
 
 - __STYLE CARD BACKS__
@@ -95,7 +95,9 @@ No errors were returned after testing all pages within the site.
 ![image](https://user-images.githubusercontent.com/95372009/157347965-30952f4f-7601-4164-8899-4722faf03108.png)
 <br>
 
-- JavaScript
+#### JavaScript JSHint Validator
+
+![image](https://user-images.githubusercontent.com/95372009/157570485-6cfc9963-3519-46de-91e7-bca1ffebfa46.png)
 
 ### Accessibility
 
@@ -113,7 +115,6 @@ The original score came back as too low on ACCESSIBILITY so aria-labels were add
  ![image](https://user-images.githubusercontent.com/95372009/156895637-e2e59f72-ccb9-4757-8224-ee8b80772f95.png)<br>
   Solution:  Create a switch/case that assigns values to strings<br>
   ![image](https://user-images.githubusercontent.com/95372009/157242560-aec07236-3279-4048-bacc-907c8d0bc1d1.png)
-
 
     Page Navigation 'hide' unsuccessful
   
